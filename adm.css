@@ -1,0 +1,100 @@
+/* Estilos globais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+    background-color: #34495E;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para o texto do logotipo */
+.logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para a lista de navegação (não está sendo usada aqui) */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px;
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para a seção de soluções */
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para os botões de solução */
+.solution-button {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilo para o botão em destaque */
+.solution-button.highlight {
+    border-color: #2196f3;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Estilo para o ícone dentro do botão */
+.solution-button .icon {
+    font-size: 40px;
+}
+
+/* Estilo para o nome dentro do botão */
+.solution-button .name {
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Estilo de hover para o botão */
+.solution-button:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+a:-webkit-any-link {
+    color: rgb(248, 248, 250)!important; 
+    text-decoration: none!important;
+}

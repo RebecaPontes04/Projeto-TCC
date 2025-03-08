@@ -1,0 +1,96 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(44, 62, 80, 0.9);
+    background-size: cover;
+    color: #ECF0F1;
+}
+
+/* Barra de Navegação */
+header {
+    background-color: #34495E;
+    padding: 20px 20px;
+    margin-bottom: 200px;
+}
+
+nav {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navbar a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Container para veículos */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-content p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.alert {
+    color: red;
+    text-align: center;
+}

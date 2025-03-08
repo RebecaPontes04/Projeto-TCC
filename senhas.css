@@ -1,0 +1,101 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2C3E50;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container de login com fundo branco */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Título da página */
+h1 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+/* Estilo do botão de envio */
+.inputSubmit {
+    background-color: #28a745; /* Verde */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 25px; /* Botão mais arredondado */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cor do botão ao passar o mouse */
+.inputSubmit:hover {
+    background-color: #007bff; /* Azul ao passar o mouse */
+}
+
+/* Estilo para links */
+.back-link {
+    text-decoration: none;
+    color: #8E44AD;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Estilo para mensagens de erro ou sucesso */
+.message {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+a:-webkit-any-link {
+    color: rgb(248, 248, 250)!important; 
+    text-decoration: none!important;
+}

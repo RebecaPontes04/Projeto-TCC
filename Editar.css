@@ -1,0 +1,86 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+/* Estilos para a caixa de conteúdo */
+.box {
+    color: rgb(13, 13, 13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+/* Estilos para o elemento legend */
+legend {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(9, 9, 9);
+    border-radius: 8px;
+}
+
+/* Estilos para o contêiner de inputs */
+.inputBox {
+    position: relative;
+}
+
+/* Estilos para os inputs de texto */
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    outline: none;
+    color: rgb(14, 13, 13);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Estilos para o rótulo dos inputs */
+.labelInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* Estilos para o rótulo quando o input está em foco ou válido */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -15px;
+    font-size: 12px;
+    color: rgb(15, 15, 15);
+}
+
+/* Estilos para o input de data */
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Estilos para o botão de envio */
+#submit {
+    background-color: green;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Estilos para o botão de envio ao passar o mouse sobre ele */
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}

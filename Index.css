@@ -1,0 +1,238 @@
+/* Estilos Globais */
+/* Define as configurações básicas para toda a página, incluindo fonte, margens, preenchimento, e fundo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('index.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ECF0F1;
+}
+
+/* Barra de Navegação */
+/* Estiliza a barra de navegação, incluindo o fundo, layout e os estilos dos links */
+header {
+    background-color: #34495E;
+    padding: 10px 20px;
+    position: fixed; /* Fixa a barra de navegação */
+    width: 100vw; /* Usa largura total da janela de visualização */
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Flexbox para centralizar e ajustar */
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ECF0F1;
+    text-align: center;
+    flex: 2;
+}
+
+.navbar a:hover{
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #ECF0F1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    text-decoration: none !important;
+}
+
+.navbar .auth-icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/* Seção Hero */
+/* Define o estilo da seção hero, incluindo o fundo, alinhamento do texto e botão de chamada para ação */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(44, 62, 80, 0.7);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #3498DB;
+    color: #ECF0F1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Caixa de Busca */
+/* Estiliza o container e o formulário da caixa de busca, incluindo layout e estilos dos campos e botões */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.search-container form {
+    display: flex;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    width: 300px;
+    color: #7ac143;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #7ac143;
+}
+
+.search-container button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Seção Features */
+/* Estiliza a seção de recursos, incluindo layout flexível e estilos dos itens de destaque */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature-item i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3498DB;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+}
+
+/* Rodapé */
+/* Define o estilo do rodapé, incluindo a cor de fundo, alinhamento do texto e posição fixa na parte inferior da página */
+footer {
+    background-color: #34495E;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Botões de Autenticação */
+/* Estiliza os botões de autenticação na barra de navegação */
+.auth-buttons {
+    margin-left: auto;
+    margin-right: -360px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons a {
+    margin-left: 15px;
+}
+
+/* Estiliza a barra de navegação principal, utilizando flexbox para distribuir o conteúdo. Alinha itens do menu e logo, e posiciona os botões de autenticação à direita. */
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estiliza o container dos botões de autenticação, garantindo que os botões estejam alinhados verticalmente e adiciona espaçamento entre os links */
+.auth-buttons {
+    display: flex; 
+    align-items: center;
+}
+
+/* Adiciona espaçamento à esquerda de cada link dentro do container de botões de autenticação */
+.auth-buttons a {
+    margin-left: 10px; 
+}
+
+/* Estiliza o dropdown-menu gerado pelo Bootstrap */
+.dropdown-menu {
+    background-color: #34495E !important; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Estiliza os itens do dropdown para se adequar à nova cor de fundo */
+.dropdown-menu .dropdown-item {
+    width: 270px;
+    color: #ECF0F1; /* Cor do texto */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    text-decoration: none;
+    background-color: #2C3E50; /* Cor de fundo em hover */
+    color: #fff; /* Cor do texto em hover */
+    transform: translateX(-10px); /* Move o item 10px para a esquerda */
+}
+
+
+.fa-solid, fa-user{
+    height: -18px;
+    margin-right: 5px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: none !important;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
